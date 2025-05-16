@@ -1,0 +1,6 @@
+@KAEAGoalWebAPI_HostAddress = http://localhost:5185
+
+GET {{KAEAGoalWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

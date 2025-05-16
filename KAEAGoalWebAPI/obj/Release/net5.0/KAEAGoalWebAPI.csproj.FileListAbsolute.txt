@@ -1,0 +1,236 @@
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\appsettings.Development.json
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\appsettings.json
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.exe
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.deps.json
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.runtimeconfig.json
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.runtimeconfig.dev.json
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.pdb
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Humanizer.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.Identity.Client.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.OpenApi.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\QRCoder.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\System.Drawing.Common.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\System.Runtime.Caching.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.csproj.AssemblyReference.cache
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.AssemblyInfoInputs.cache
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.AssemblyInfo.cs
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\scopedcss\bundle\KAEAGoalWebAPI.styles.css
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\KAEAGoalWebAPI.StaticWebAssets.Manifest.cache
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\KAEAGoalWebAPI.StaticWebAssets.Pack.cache
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.KAEAGoalWebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.build.KAEAGoalWebAPI.props
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.buildMultiTargeting.KAEAGoalWebAPI.props
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.buildTransitive.KAEAGoalWebAPI.props
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoal.235869CB.Up2Date
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\refint\KAEAGoalWebAPI.dll
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.pdb
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.genruntimeconfig.cache
+C:\Users\axsez\source\repos\KAEAGoalWebAPI\KAEAGoalWebAPI\obj\Release\net5.0\ref\KAEAGoalWebAPI.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\appsettings.Development.json
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\appsettings.json
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.exe
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.deps.json
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.runtimeconfig.json
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.runtimeconfig.dev.json
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.pdb
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Humanizer.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.Identity.Client.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.OpenApi.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\QRCoder.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Drawing.Common.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Runtime.Caching.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.csproj.AssemblyReference.cache
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.AssemblyInfoInputs.cache
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.AssemblyInfo.cs
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.sourcelink.json
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\scopedcss\bundle\KAEAGoalWebAPI.styles.css
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\KAEAGoalWebAPI.StaticWebAssets.Manifest.cache
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\KAEAGoalWebAPI.StaticWebAssets.Pack.cache
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.KAEAGoalWebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.build.KAEAGoalWebAPI.props
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.buildMultiTargeting.KAEAGoalWebAPI.props
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.buildTransitive.KAEAGoalWebAPI.props
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoal.235869CB.Up2Date
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\refint\KAEAGoalWebAPI.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.pdb
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.genruntimeconfig.cache
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\ref\KAEAGoalWebAPI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\appsettings.Development.json
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\appsettings.json
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.exe
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.deps.json
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.runtimeconfig.json
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.runtimeconfig.dev.json
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\KAEAGoalWebAPI.pdb
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Humanizer.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.Data.SqlClient.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.Identity.Client.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Microsoft.OpenApi.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\QRCoder.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Drawing.Common.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Runtime.Caching.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.csproj.AssemblyReference.cache
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.AssemblyInfoInputs.cache
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.AssemblyInfo.cs
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.csproj.CoreCompileInputs.cache
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.sourcelink.json
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.RazorTargetAssemblyInfo.cache
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\scopedcss\bundle\KAEAGoalWebAPI.styles.css
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\KAEAGoalWebAPI.StaticWebAssets.Manifest.cache
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\KAEAGoalWebAPI.StaticWebAssets.Pack.cache
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.KAEAGoalWebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.build.KAEAGoalWebAPI.props
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.buildMultiTargeting.KAEAGoalWebAPI.props
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\staticwebassets\msbuild.buildTransitive.KAEAGoalWebAPI.props
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoal.235869CB.Up2Date
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\refint\KAEAGoalWebAPI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.pdb
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\KAEAGoalWebAPI.genruntimeconfig.cache
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\obj\Release\net5.0\ref\KAEAGoalWebAPI.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\ClosedXML.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\ClosedXML.Parser.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\DocumentFormat.OpenXml.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\DocumentFormat.OpenXml.Framework.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\ExcelNumberFormat.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\RBush.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\SixLabors.Fonts.dll
+D:\Afteryou PCL\Development\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.IO.Packaging.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\web.config
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\ClosedXML.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\ClosedXML.Parser.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\DocumentFormat.OpenXml.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\ExcelNumberFormat.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Magick.NET-Q16-AnyCPU.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\Magick.NET.Core.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\RBush.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\SixLabors.Fonts.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\System.IO.Packaging.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\linux-arm64\native\Magick.Native-Q16-arm64.dll.so
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\linux-musl-x64\native\Magick.Native-Q16-x64.dll.so
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\linux-x64\native\Magick.Native-Q16-x64.dll.so
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\osx-arm64\native\Magick.Native-Q16-arm64.dll.dylib
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\osx-x64\native\Magick.Native-Q16-x64.dll.dylib
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-arm64\native\Magick.Native-Q16-arm64.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x64\native\Magick.Native-Q16-x64.dll
+C:\Users\axsez\source\repos\kaegoalapi\KAEAGoalWebAPI\bin\Release\net5.0\runtimes\win-x86\native\Magick.Native-Q16-x86.dll
