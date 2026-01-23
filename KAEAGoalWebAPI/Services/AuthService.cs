@@ -189,8 +189,12 @@ namespace KAEAGoalWebAPI.Services
             var user = await _context.USERS
                 .Where(u => EF.Functions.Collate(u.LOGON_NAME, "SQL_Latin1_General_CP1_CS_AS") == model.LOGON_NAME)
                 .FirstOrDefaultAsync();
+
             if (user == null || !VerifyPassword(model.USER_PASSWORD, user.USER_PASSWORD))
                 return null;
+
+            if (user.StateCode == 0)
+                throw new UnauthorizedAccessException("User is disabled");
 
             var accessToken = GenerateJwtToken(user);
             var refreshToken = GenerateRefreshToken();
@@ -817,7 +821,7 @@ namespace KAEAGoalWebAPI.Services
                     await photo.CopyToAsync(stream);
                 }
 
-                var imagePath = _configuration["AppSettings:ImageProfilePath"] ; // สำหรับ public access เช่น /uploads/homebanners/
+                var imagePath = _configuration["AppSettings:ImageProfilePath"]; // สำหรับ public access เช่น /uploads/homebanners/
                 var fileUrl = Path.Combine(imagePath, uniqueFileName).Replace("\\", "/");
 
                 var banner = new HomeBanner
@@ -862,24 +866,78 @@ namespace KAEAGoalWebAPI.Services
 
             return true;
         }
+        public async Task<List<UserInfoDto>> GetUsersInfoByLogonNamesAsync(List<string> logonNames)
+        {
+            return await _context.USERS
+                .Where(u => logonNames.Contains(u.LOGON_NAME))
+                .Select(u => new UserInfoDto
+                {
+                    A_USER_ID = u.A_USER_ID,
+                    LogonName = u.LOGON_NAME,
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    BranchCode = u.BranchCode,
+                    Department = u.Department,
+                    StateCode = u.StateCode
+                })
+                .ToListAsync();
+        }
+
+
+        public async Task<bool> UpdateUserStateCodeAsync(Guid userId, int stateCode)
+        {
+            var user = await _context.USERS
+                .FirstOrDefaultAsync(u => u.A_USER_ID == userId);
+
+            if (user == null)
+                return false;
+
+            user.StateCode = stateCode;
+            user.UpdatedOn = DateTime.UtcNow;
+
+            _context.USERS.Update(user);
+            await _context.SaveChangesAsync();
+
+            return true;
+        }
+
+        public async Task<int> CloseUsersAsync(List<Guid> userIds)
+        {
+            var users = await _context.USERS
+                .Where(u => userIds.Contains(u.A_USER_ID))
+                .ToListAsync();
+
+            if (!users.Any())
+                return 0;
+
+            foreach (var user in users)
+            {
+                user.StateCode = 0;
+                user.UpdatedOn = DateTime.UtcNow;
+            }
+
+            _context.USERS.UpdateRange(users);
+            await _context.SaveChangesAsync();
+
+            return users.Count;
+        }
 
     }
-
-
-
-
-    //public async Task<string> NewRegisterAsync(int employeeId)
-    //{
-    //    var existingEmployee = await _scontext.AuUsers
-    //        .FirstOrDefaultAsync(u => u.AU_Employee_ID == employeeId);
-
-    //    if (existingEmployee != null)
-    //        return "Registration failed: Employee does not exist.";
-
-
-    //    return "Registered successful.";
-
-
-    //}
 }
+
+
+//public async Task<string> NewRegisterAsync(int employeeId)
+//{
+//    var existingEmployee = await _scontext.AuUsers
+//        .FirstOrDefaultAsync(u => u.AU_Employee_ID == employeeId);
+
+//    if (existingEmployee != null)
+//        return "Registration failed: Employee does not exist.";
+
+
+//    return "Registered successful.";
+
+
+//}
+
 

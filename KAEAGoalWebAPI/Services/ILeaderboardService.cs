@@ -7,7 +7,7 @@ namespace KAEAGoalWebAPI.Services
 {
     public interface ILeaderboardService
     {
-        Task ResetAndRewardLeaderboardAsync();
+        // Task ResetAndRewardLeaderboardAsync();
         Task<List<LeaderboardViewModel>> GetCurrentLeaderboardAsync();
         Task<LeaderboardViewModel> GetYourCurrentRankingAsync(Guid userId);
         Task<List<LeaderboardViewModel>> GetTop10LeaderboardAsync();

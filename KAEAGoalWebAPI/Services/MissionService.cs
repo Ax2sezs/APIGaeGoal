@@ -262,6 +262,7 @@ namespace KAEAGoalWebAPI.Services
         public async Task<List<MissionViewModel>> GetAllMissionsAsync()
         {
             var missions = await _context.MISSIONS
+                .OrderByDescending(m => m.Created_At)
                 //.Where(m => m.Expire_Date < DateTime.UtcNow)
                 .Include(m => m.MISSION_IMAGES)   // Include images if necessary
                 .Include(m => m.CodeMission)      // Include the related CodeMission if necessary
@@ -316,7 +317,7 @@ namespace KAEAGoalWebAPI.Services
 
             // Fetch missions that are not in the accepted list
             var missions = await _context.MISSIONS
-                .Where(m => !acceptedMissionIds.Contains(m.MISSION_ID) && m.Expire_Date >= bangkokTime && (m.Participate_Type == "All" || m.Participate_Type == user.BranchCode||user.IsAdmin==9)) // Filter out accepted missions
+                .Where(m => !acceptedMissionIds.Contains(m.MISSION_ID) && m.Expire_Date >= bangkokTime && (m.Participate_Type == "All" || m.Participate_Type == user.BranchCode || user.IsAdmin == 9)) // Filter out accepted missions
                 .Include(m => m.MISSION_IMAGES)   // Include images if necessary
                 .Include(m => m.CodeMission)      // Include the related CodeMission if necessary
                 .ToListAsync();
@@ -336,7 +337,7 @@ namespace KAEAGoalWebAPI.Services
                 MissionImages = m.MISSION_IMAGES.Select(img => img.ImageUrl).ToList(),  // Map images to URLs
                 CodeMission = m.CodeMission?.Code_Mission_Code,
                 Accept_limit = (int)m.Accept_limit,
-                Current_Accept = _context.USER_MISSIONS.Count(um => um.MISSION_ID == m.MISSION_ID&&um.Submitted_At!=null),
+                Current_Accept = _context.USER_MISSIONS.Count(um => um.MISSION_ID == m.MISSION_ID && um.Submitted_At != null),
                 Participate_Type = m.Participate_Type,
                 MISSION_Buffer = m.MISSION_Buffer,
                 MISSION_TypeCoin = m.MISSION_TypeCoin ?? 0,
@@ -510,9 +511,9 @@ namespace KAEAGoalWebAPI.Services
                     Accepted_Date = um.Accepted_Date,
                     Submitted_At = um.Submitted_At,
                     Completed_Date = um.Completed_Date,
-                    Is_Collect = um.Is_Collect, 
+                    Is_Collect = um.Is_Collect,
                     Accept_limit = um.Mission.Accept_limit ?? 0,
-                    Current_Accept = _context.USER_MISSIONS.Count(uum=>uum.MISSION_ID==um.MISSION_ID&&uum.Submitted_At!=null),
+                    Current_Accept = _context.USER_MISSIONS.Count(uum => uum.MISSION_ID == um.MISSION_ID && uum.Submitted_At != null),
                     Accepted_Desc = um.Accepted_Desc,
                     Is_Public = um.Mission.Is_Public,
                 })
@@ -969,7 +970,7 @@ namespace KAEAGoalWebAPI.Services
                         }
                     }
 
-                    
+
 
                     fileUrl = Path.Combine(imagePath, newFileName);  // ใช้ชื่อไฟล์ใหม่
                     //uploadedUrls.Add(fileUrl);
@@ -1225,7 +1226,7 @@ namespace KAEAGoalWebAPI.Services
                 _context.COIN_TRANSACTIONS.Add(pointTransaction);
 
                 // เพิ่ม Coin เข้าไปต่อเลย
-                var cointype = qrCodeMission.UserMission.Mission.MISSION_TypeCoin ?? 0; 
+                var cointype = qrCodeMission.UserMission.Mission.MISSION_TypeCoin ?? 0;
                 var pointTransaction_coin = new CoinTransaction
                 {
                     COIN_TRANSACTION_ID = Guid.NewGuid(),
@@ -1483,7 +1484,7 @@ namespace KAEAGoalWebAPI.Services
                     UPLOADED_AT = m.Uploaded_At,
                     Approve = m.Approve,
                     Approve_By = m.Approve_By,
-                    Approve_By_NAME = _context.USERS.Where(u=>u.A_USER_ID==m.Approve_By).Select(u=>u.User_Name).FirstOrDefault(),
+                    Approve_By_NAME = _context.USERS.Where(u => u.A_USER_ID == m.Approve_By).Select(u => u.User_Name).FirstOrDefault(),
                     Approve_DATE = m.Approve_At,
                     PHOTO = m.IMAGES.Select(img => img.ImageUrl).ToList(),
                     Is_View = m.IsView,
@@ -1494,7 +1495,7 @@ namespace KAEAGoalWebAPI.Services
             return (data, total, totalPage);
         }
 
-        public async Task<(List<ApproveVideoViewModel> data, int total ,int totalPage)> GetVideoApproveByMissionAsync(
+        public async Task<(List<ApproveVideoViewModel> data, int total, int totalPage)> GetVideoApproveByMissionAsync(
     Guid missionId, int page, int pageSize, string missionowner, string? searchName)
         {
             IQueryable<UserVideoMission> query = _context.USER_VIDEO_MISSIONS
@@ -1659,7 +1660,7 @@ namespace KAEAGoalWebAPI.Services
                     Expire_DATE = m.Expire_Date,
                     Is_Public = m.Is_Public,
                     description = m.Description,
-                    
+
                 })
                 .ToListAsync();
         }
@@ -1714,12 +1715,12 @@ namespace KAEAGoalWebAPI.Services
                       Approve = m.Approve,
                       Approve_By = m.Approve_By,
                       Approve_DATE = m.Approve_At,
-                       VIDEO= m.VideoUrl,
+                      VIDEO = m.VideoUrl,
                   })
                 .ToListAsync();
 
 
-             
+
 
             return model;
         }
@@ -1729,8 +1730,8 @@ namespace KAEAGoalWebAPI.Services
             return missionowner switch
             {
                 "1" => new List<string> { "All", "AUOF", "AUBR", "AUFC" },
-                "2" => new List<string> { "All","AUBR" },
-                "3" => new List<string> { "All","AUFC" },
+                "2" => new List<string> { "All", "AUBR" },
+                "3" => new List<string> { "All", "AUFC" },
                 "9" => new List<string> { "All", "AUOF", "AUBR", "AUFC" }, // ✅ Super Admin
                 _ => new List<string>()
             };
@@ -1915,8 +1916,8 @@ namespace KAEAGoalWebAPI.Services
                     Transaction_Type = "Mission Reward",
                     Description = $"Reward for mission: {photoMission.Mission.MISSION_NAME}",
                     A_USER_ID = photoMission.A_USER_ID,
-                    Coin_Type = CoinType.MissionPoint 
-                }; 
+                    Coin_Type = CoinType.MissionPoint
+                };
                 // เพิ่ม point transaction เข้าไปในฐานข้อมูล
                 _context.COIN_TRANSACTIONS.Add(pointTransaction);
 
@@ -1933,7 +1934,7 @@ namespace KAEAGoalWebAPI.Services
                     Description = $"{pointTransaction.Transaction_Type} : {photoMission.Mission.MISSION_NAME}",
                     A_USER_ID = photoMission.A_USER_ID,
                     Coin_Type = cointype == 0 ? CoinType.KaeaCoin : CoinType.ThankCoin
-                };             
+                };
                 _context.COIN_TRANSACTIONS.Add(pointTransaction_coin);
 
 
@@ -2226,7 +2227,7 @@ namespace KAEAGoalWebAPI.Services
         public async Task<string> MissionerAddWinnerCoinAllMissionAsync_list(Guid userId, AddCoinWinnerMission model, string missionowner)
         {
             var bangkokTime = GetBangkokTime();
- 
+
             var list_missioner = await _context.MISSIONS.ToListAsync();
             var missioner = list_missioner.Where(m => m.MISSION_ID == model.MISSION_ID).ToList();
 
@@ -2352,7 +2353,7 @@ namespace KAEAGoalWebAPI.Services
 
 
         }
-         
+
         public async Task<string> MissionerAddWinnerCoinAllMissionAsync(Guid userId, AddCoinWinnerMission model, string missionowner)
         {
             try
@@ -2427,9 +2428,9 @@ namespace KAEAGoalWebAPI.Services
                 var RankCoin = 0;
                 using var transaction = await _context.Database.BeginTransactionAsync(); // เริ่มต้น transaction
 
-           
+
                 var m_userid = model.A_USER_ID;
-                 
+
                 Console.WriteLine($"User ID: {userId}");
 
                 if (model.Rank == 1)
@@ -2466,7 +2467,7 @@ namespace KAEAGoalWebAPI.Services
                 //sentMission.IsReward = true;
 
                 // เพิ่มรายการ CoinTransaction ลงในฐานข้อมูล
-                _context.COIN_TRANSACTIONS.Add(coinTransaction); 
+                _context.COIN_TRANSACTIONS.Add(coinTransaction);
                 await _context.SaveChangesAsync();
                 await transaction.CommitAsync();
 
@@ -2475,11 +2476,11 @@ namespace KAEAGoalWebAPI.Services
 
             }
             catch (Exception ex)
-            { 
+            {
                 return $"Error during processing: {ex.Message}";
-            } 
+            }
         }
-         
+
         public async Task<string> MissionerAddWinnerCoinRewardQRMissionAsync(Guid userId, AddCoinWinnerMission model)
         {
             var bangkokTime = GetBangkokTime();
@@ -2816,7 +2817,7 @@ namespace KAEAGoalWebAPI.Services
                 Submitted_At = bangkokTime,
                 Approve = null,
                 IsView = true,
-                
+
             };
 
             mission.Submitted_At = bangkokTime;
@@ -2827,7 +2828,7 @@ namespace KAEAGoalWebAPI.Services
             return "Executed Mission successfully.";
         }
 
-        public async Task<(List<ApproveTextViewModel> data, int total,int totalPage)> GetTextApproveByMissionAsync(
+        public async Task<(List<ApproveTextViewModel> data, int total, int totalPage)> GetTextApproveByMissionAsync(
     Guid missionId, int page, int pageSize, string missionowner, string? searchName)
         {
             IQueryable<UserTextMission> query = _context.USER_TEXT_MISSIONS
@@ -2888,7 +2889,7 @@ namespace KAEAGoalWebAPI.Services
 
         public async Task<List<ApproveTextViewModel>> GetAllTextApproveAsync(string missionowner)
         {
-             
+
             IQueryable<UserTextMission> query_user = _context.USER_TEXT_MISSIONS;
 
             if (missionowner != "9")
@@ -2919,7 +2920,7 @@ namespace KAEAGoalWebAPI.Services
                 .ToListAsync();
 
 
-           // var missiontype = ConvertMisstionOwner(missionowner);
+            // var missiontype = ConvertMisstionOwner(missionowner);
 
             //var model = await _context.USER_TEXT_MISSIONS
             //    .Where(wh => missiontype.Contains(wh.Mission.Participate_Type))
@@ -3055,7 +3056,7 @@ namespace KAEAGoalWebAPI.Services
                 };
 
                 // เพิ่ม point transaction เข้าไปในฐานข้อมูล
-                _context.COIN_TRANSACTIONS.Add(pointTransaction); 
+                _context.COIN_TRANSACTIONS.Add(pointTransaction);
 
                 // เพิ่ม Coin ไปต่อ
                 var cointype = userTextMission.UserMission.Mission.MISSION_TypeCoin ?? 0;
@@ -3272,7 +3273,7 @@ namespace KAEAGoalWebAPI.Services
                 throw new Exception("User has already sent video for this mission.");
             }
 
-           // return "Step 0xxx";
+            // return "Step 0xxx";
             if (model.videoFile == null)
                 throw new Exception("At least 1 video required.");
 
@@ -3355,29 +3356,29 @@ namespace KAEAGoalWebAPI.Services
                 Approve = null,
                 Approve_By = null,
                 VideoUrl = Path.Combine("uploads/uploads", $"{USER_VIDEO_MISSION_ID}.mp4").Replace("\\", "/"),
-                IsView=true,
+                IsView = true,
             };
 
             //fileUrl = Path.Combine(imagePath, newFileName);  // ใช้ชื่อไฟล์ใหม่
-           // uploadedUrls.Add(fileUrl);
+            // uploadedUrls.Add(fileUrl);
 
 
-             userMission.Verification_Status = "Waiting for Confirmation.";
+            userMission.Verification_Status = "Waiting for Confirmation.";
             userMission.Submitted_At = bangkokTime;
             _context.USER_VIDEO_MISSIONS.Add(userVideoMission);
-                await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
-                return $"Mission executed successfully {inputFilePath} ,{outputFilePath}";
-             
+            return $"Mission executed successfully {inputFilePath} ,{outputFilePath}";
+
         }
 
-  
+
         public async Task<List<string>> ConvertHevcToMp4Async(string inputFilePath, string outputFilePath)
         {
             List<string> result = new List<string>();
 
             try
-            { 
+            {
                 var uploadsPath = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
                 var ffmpegPath = $@"{uploadsPath}\ffmpeg.exe"; // หาก ffmpeg ถูกเพิ่มไว้ใน PATH แล้ว
 
@@ -3408,14 +3409,14 @@ namespace KAEAGoalWebAPI.Services
                     {
                         // ถ้ามีข้อผิดพลาด ให้แสดงข้อความจาก stderr 
                         result.Add("0");
-                        result.Add($"Error during conversion: {stderr}"); 
+                        result.Add($"Error during conversion: {stderr}");
                     }
 
                     // หากทำงานเสร็จสมบูรณ์
                     result.Add("1");
-                    result.Add($"Conversion successful!");  
+                    result.Add($"Conversion successful!");
                 }
-                 
+
             }
             catch (Exception ex)
             {
@@ -3551,7 +3552,7 @@ namespace KAEAGoalWebAPI.Services
             var likedUsers = await _context.Feed_Likes
                 .Where(l => l.USER_MISSION_ID == userMissionId && l.IS_LIKE == true)
                 .Join(_context.USERS, l => l.A_USER_ID, u => u.A_USER_ID, (l, u) => new UserLikeInfo
-        {
+                {
                     UserId = u.A_USER_ID,
                     DisplayName = u.DisplayName,
                     ProfileImageUrl = u.ImageUrls, // Assuming ImageUrls is the profile image field

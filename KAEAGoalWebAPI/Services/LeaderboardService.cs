@@ -40,44 +40,44 @@ namespace KAEAGoalWebAPI.Services
             return TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, bangkokTimeZone);
         }
 
-        public async Task ResetAndRewardLeaderboardAsync()
-        {
-            var bangkokTime = GetBangkokTime();
-            var lastYear = bangkokTime.Year - 1;
-            var startOfLastYear = new DateTime(lastYear, 1, 1);
-            var endOfLastYear = new DateTime(lastYear, 12, 31);
+        // public async Task ResetAndRewardLeaderboardAsync()
+        // {
+        //     var bangkokTime = GetBangkokTime();
+        //     var lastYear = bangkokTime.Year - 1;
+        //     var startOfLastYear = new DateTime(lastYear, 1, 1);
+        //     var endOfLastYear = new DateTime(lastYear, 12, 31);
 
-            var topUsers = await _context
-                .LEADERBOARDS.Where(lb =>
-                    lb.MonthYear >= startOfLastYear && lb.MonthYear <= endOfLastYear
-                )
-                .OrderByDescending(lb => lb.Point)
-                .Take(3)
-                .ToListAsync();
+        //     var topUsers = await _context
+        //         .LEADERBOARDS.Where(lb =>
+        //             lb.MonthYear >= startOfLastYear && lb.MonthYear <= endOfLastYear
+        //         )
+        //         .OrderByDescending(lb => lb.Point)
+        //         .Take(3)
+        //         .ToListAsync();
 
-            if (!topUsers.Any())
-            {
-                _logger.LogInformation(
-                    "[LeaderboardResetTask] No leaderboard entries found for the past year. Skipping reset."
-                );
-                return;
-            }
+        //     if (!topUsers.Any())
+        //     {
+        //         _logger.LogInformation(
+        //             "[LeaderboardResetTask] No leaderboard entries found for the past year. Skipping reset."
+        //         );
+        //         return;
+        //     }
 
-            _logger.LogInformation(
-                "[LeaderboardResetTask] Resetting leaderboard for the new year..."
-            );
+        //     _logger.LogInformation(
+        //         "[LeaderboardResetTask] Resetting leaderboard for the new year..."
+        //     );
 
-            _context.LEADERBOARDS.RemoveRange(
-                _context.LEADERBOARDS.Where(lb =>
-                    lb.MonthYear >= startOfLastYear && lb.MonthYear <= endOfLastYear
-                )
-            );
-            await _context.SaveChangesAsync();
+        //     _context.LEADERBOARDS.RemoveRange(
+        //         _context.LEADERBOARDS.Where(lb =>
+        //             lb.MonthYear >= startOfLastYear && lb.MonthYear <= endOfLastYear
+        //         )
+        //     );
+        //     await _context.SaveChangesAsync();
 
-            _logger.LogInformation(
-                "[LeaderboardResetTask] Leaderboard reset completed successfully."
-            );
-        }
+        //     _logger.LogInformation(
+        //         "[LeaderboardResetTask] Leaderboard reset completed successfully."
+        //     );
+        // }
 
         //public async Task<List<LeaderboardViewModel>> GetCurrentLeaderboardAsync()
         //{
@@ -151,7 +151,7 @@ namespace KAEAGoalWebAPI.Services
 
             // เลือกเฉพาะ 10 อันดับแรกจาก currentLeaderboard
             //var top10Leaderboard = currentLeaderboard.Take(10).ToList();
-            var top10Leaderboard = GetCurrentLeaderboardAsync
+            var top10Leaderboard = currentLeaderboard
                 .Where(rn => rn.Rank <= 10)
                 .OrderBy(rn => rn.Rank) // เรียงจากน้อยไปมาก
                 .ToList();
