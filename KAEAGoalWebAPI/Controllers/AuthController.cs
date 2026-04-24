@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -30,9 +31,9 @@ namespace KAEAGoalWebAPI.Controllers
         [Authorize]
         public async Task<IActionResult> Register([FromBody] UserRegistrationModel model)
         {
-            if (!ModelState.IsValid) 
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            
+
             var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             var result = await _authService.RegisterAsync(userId, model);
 
@@ -182,8 +183,63 @@ namespace KAEAGoalWebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new { message = ex.Message } );
+                return BadRequest(new { message = ex.Message });
             }
+        }
+        [Authorize(Roles = "Admin")]
+        [HttpPost("get-users-info")]
+        public async Task<IActionResult> GetUsersInfo(
+           [FromBody] GetUsersInfoRequest request)
+        {
+            if (request?.LogonNames == null || !request.LogonNames.Any())
+                return BadRequest("LogonNames list is required");
+
+            var users = await _authService
+                .GetUsersInfoByLogonNamesAsync(request.LogonNames);
+
+            return Ok(users);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPut("Admin-Update-User-StateCode")]
+        public async Task<IActionResult> UpdateUserStateCode(
+    [FromBody] UpdateUserStateCodeRequest request)
+        {
+            if (request == null)
+                return BadRequest("Invalid payload");
+
+            var result = await _authService
+                .UpdateUserStateCodeAsync(request.A_USER_ID, request.StateCode);
+
+            if (!result)
+                return NotFound("User not found");
+
+            return Ok(new
+            {
+                success = true,
+                message = "User state updated"
+            });
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost("close-users")]
+        public async Task<IActionResult> CloseUsers(
+            [FromBody] CloseUsersRequest request)
+        {
+            if (request?.A_USER_ID == null || !request.A_USER_ID.Any())
+                return BadRequest("User ID list is required");
+
+            var closedCount = await _authService
+                .CloseUsersAsync(request.A_USER_ID);
+
+            if (closedCount == 0)
+                return NotFound("No users found");
+
+            return Ok(new
+            {
+                success = true,
+                closedCount
+            });
         }
 
         [HttpPut("Update-Display-Name")]
@@ -196,9 +252,9 @@ namespace KAEAGoalWebAPI.Controllers
                 var result = await _authService.UpdateDisplayNameAsync(userId, model);
                 return Ok(result);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                return BadRequest(new { message = ex.Message } );
+                return BadRequest(new { message = ex.Message });
             }
         }
 
@@ -212,9 +268,9 @@ namespace KAEAGoalWebAPI.Controllers
                 var result = await _authService.ResetPasswordAsync(adminId, userId);
                 return Ok(result);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                return BadRequest(new { Message = ex} );
+                return BadRequest(new { Message = ex });
             }
         }
 
@@ -228,7 +284,7 @@ namespace KAEAGoalWebAPI.Controllers
                 var result = await _authService.ChangePasswordAsync(userId, model); // เรียกฟังก์ชัน ChangePasswordAsync
 
                 // ตรวจสอบข้อความผลลัพธ์จาก ChangePasswordAsync
-                if (result.Contains("error") || result.Contains("not match") || result.Contains("incorrect")||result.Contains("must be"))
+                if (result.Contains("error") || result.Contains("not match") || result.Contains("incorrect") || result.Contains("must be"))
                 {
                     return BadRequest(new { Message = result }); // ส่งข้อความผิดพลาดในกรณีที่เกิดข้อผิดพลาด
                 }
