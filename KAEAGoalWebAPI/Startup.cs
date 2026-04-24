@@ -20,6 +20,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Security.Cryptography;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 namespace KAEAGoalWebAPI
@@ -49,29 +50,31 @@ namespace KAEAGoalWebAPI
 
 
 
-            var publicKeyPath = Configuration["Jwt:PublicKeyPath"];
-            if (string.IsNullOrEmpty(publicKeyPath) || !File.Exists(publicKeyPath))
-                throw new Exception("Public key file not found!");
+            // var publicKeyPath = Configuration["Jwt:PublicKeyPath"];
+            // if (string.IsNullOrEmpty(publicKeyPath) || !File.Exists(publicKeyPath))
+            //     throw new Exception("Public key file not found!");
 
-            var publickey = File.ReadAllText(publicKeyPath);
-            var rsa = RSA.Create();
-            rsa.ImportFromPem(publickey.ToCharArray());
+            // var publickey = File.ReadAllText(publicKeyPath);
+            // var rsa = RSA.Create();
+            // rsa.ImportFromPem(publickey.ToCharArray());
+
+            var secretKey = Configuration["Jwt:SecretKey"];
+            var key = Encoding.UTF8.GetBytes(secretKey);
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-        .AddJwtBearer(options =>
-        {
-            options.TokenValidationParameters = new TokenValidationParameters
+            .AddJwtBearer(options =>
             {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new RsaSecurityKey(rsa),
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidIssuer = Configuration["Jwt:Issuer"],
-                ValidAudience = Configuration["Jwt:Audience"],
-                ValidateLifetime = true // Ensures the token has not expired
-            };
-        });
-
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    ValidAudience = Configuration["Jwt:Audience"],
+                    ValidateLifetime = true
+                };
+            });
             services.AddHttpContextAccessor();
             // Database configuration
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -84,7 +87,7 @@ namespace KAEAGoalWebAPI
             services.AddScoped<IRewardService, RewardService>();
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddScoped<ILeaderboardService, LeaderboardService>();
-            services.AddHostedService<LeaderboardResetTask>();
+            // services.AddHostedService<LeaderboardResetTask>();
 
             // Authentication and Authorization
             //services.AddAuthentication("Bearer")

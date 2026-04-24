@@ -37,22 +37,7 @@ namespace KAEAGoalWebAPI.Controllers
             }
         }
 
-        [HttpPost("test-reset")]
-        public async Task<IActionResult> TestResetLeaderboard()
-        {
-            try
-            {
-                using var scope = _serviceProvider.CreateScope();
-                var leaderboardService = scope.ServiceProvider.GetRequiredService<ILeaderboardService>(); // ✅ Use Interface
-
-                await leaderboardService.ResetAndRewardLeaderboardAsync();
-                return Ok("Leaderboard reset successfully.");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error: {ex.Message}");
-            }
-        }
+       
         [HttpGet("top10")]
         public async Task<IActionResult> GetTop10Leaderboard()
         {

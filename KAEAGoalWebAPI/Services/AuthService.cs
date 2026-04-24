@@ -325,7 +325,6 @@ namespace KAEAGoalWebAPI.Services
         {
             var bangkokTime = GetBangkokTime();
 
-            //Role value
             string role = user.IsAdmin switch
             {
                 9 => "Admin",
@@ -336,31 +335,29 @@ namespace KAEAGoalWebAPI.Services
             };
 
             var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.NameIdentifier, user.A_USER_ID.ToString()),
-                new Claim(ClaimTypes.Name, user.LOGON_NAME ?? string.Empty),
-                new Claim(ClaimTypes.Role, role),
-                new Claim("MissionOwner",   user.IsBkk.ToString())
-            };
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.A_USER_ID.ToString()),
+        new Claim(ClaimTypes.Name, user.LOGON_NAME ?? string.Empty),
+        new Claim(ClaimTypes.Role, role),
+        new Claim("MissionOwner", user.IsBkk.ToString())
+    };
 
-            var privateKeyPath = _configuration["Jwt:PrivateKeyPath"];
-            if (string.IsNullOrEmpty(privateKeyPath) || !File.Exists(privateKeyPath))
-                throw new Exception("Private key file not found!");
-
-            var privateKey = File.ReadAllText(privateKeyPath);
-            var rsa = RSA.Create();
-            rsa.ImportFromPem(privateKey.ToCharArray());
+            // ✅ ใช้ SecretKey แทนไฟล์
+            var secretKey = _configuration["Jwt:SecretKey"];
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
 
             var signingCredentials = new SigningCredentials(
-                new RsaSecurityKey(rsa),
-                SecurityAlgorithms.RsaSha256);
+                key,
+                SecurityAlgorithms.HmacSha256
+            );
 
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
                 claims: claims,
                 expires: bangkokTime.AddHours(12),
-                signingCredentials: signingCredentials);
+                signingCredentials: signingCredentials
+            );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
